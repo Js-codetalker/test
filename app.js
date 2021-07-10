@@ -1,9 +1,8 @@
 const request = new XMLHttpRequest;
+request.open('GET','https://api.jsonbin.io/b/5e1aa891b236b871b3605dd6/1');
+request.send();
 
-request.open('GET','https://api.jsonbin.io/b/5e1aa891b236b871b3605dd6/1')
-request.send()
-body = document.querySelector('body')
-body.innerHTML = request.addEventListener("load",()=>{
+request.addEventListener("load",()=>{
 	if (request.status == 200) {
 		let info = JSON.parse(request.response)
 
@@ -40,4 +39,5 @@ body.innerHTML = request.addEventListener("load",()=>{
 
 console.log(documentFragment)
 
+jsdkfhasdkjhfkljsahdfkljhsldkjhfklsjhafhd
 
